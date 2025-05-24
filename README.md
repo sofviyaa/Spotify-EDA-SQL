@@ -59,7 +59,7 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 
 ## 6 Practice Questions
 1. What factors influence streaming numbers on Spotify?
-2. Use a WITH clause to calculate the difference between the highest and lowest energy values for tracks in each album.
+3. Use a WITH clause to calculate the difference between the highest and lowest energy values for tracks in each album.
 ```sql
 WITH cte
 AS
