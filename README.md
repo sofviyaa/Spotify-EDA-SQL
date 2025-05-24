@@ -59,7 +59,10 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 
 ## 6 Practice Questions
 1. What factors influence streaming numbers on Spotify?
-3. Use a WITH clause to calculate the difference between the highest and lowest energy values for tracks in each album.
+![Answer q1](https://github.com/sofviyaa/Spotify-EDA-SQL/blob/main/1.png)
+louder tracks might have better streaming performance
+
+2. Use a WITH clause to calculate the difference between the highest and lowest energy values for tracks in each album.
 ```sql
 WITH cte
 AS
@@ -76,10 +79,22 @@ SELECT
 FROM cte
 ORDER BY 2 DESC
 ```
-4. Identify the top 3 most popular tracks (by streams) for each album type (e.g., single, compilation) and calculate their average energy levels
-5. For each artist, calculate the total number of streams and the average loudness of their tracks, and identify the artist with the highest average loudness.
-6. Determine the percentage of tracks that have an official video and compare the average number of streams for tracks with and without official videos.
-7. Calculate the cumulative sum of likes for tracks ordered by the number of views, using window functions.
+![Answer q2](https://github.com/sofviyaa/Spotify-EDA-SQL/blob/main/2.png)
+"White Noise" and "Spotify Singles - Holiday" exhibit high energy levels, indicating their potential for popularity.
+
+3. Identify the top 3 most popular tracks (by streams) for each album type (e.g., single, compilation) and calculate their average energy levels
+![Answer q3](https://github.com/sofviyaa/Spotify-EDA-SQL/blob/main/3.png)
+
+4. For each artist, calculate the total number of streams and the average loudness of their tracks, and identify the artist with the highest average loudness.
+![Answer q4](https://github.com/sofviyaa/Spotify-EDA-SQL/blob/main/4.png)
+
+5. Determine the percentage of tracks that have an official video and compare the average number of streams for tracks with and without official videos.
+![Answer q5](https://github.com/sofviyaa/Spotify-EDA-SQL/blob/main/5.png)
+A substantial 76% of streams incorporate video, highlighting its role in enhancing viewer engagement.
+
+6. Calculate the cumulative sum of likes for tracks ordered by the number of views, using window functions.
+![Answer q6](https://github.com/sofviyaa/Spotify-EDA-SQL/blob/main/6.png)
+"Despacito" leads in views while "Shape of You" reflects strong engagement metrics with fewer views.
 
 ## Query Optimization Technique 
 
